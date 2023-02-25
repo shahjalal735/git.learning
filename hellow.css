@@ -7,13 +7,36 @@ body {
     height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .container {
-    height: 40%;
-    width: 70%;
-    background-color: aqua;
-    display: flex;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-content: center;
+}
+
+.item {
+    padding: 15px;
+    background-color: aqua;
+    border-radius: 5px;
+}
+
+.item-1 {
+    grid-column: 1 / 3;
+    background-color: rgb(227, 33, 172);
+}
+
+.item-4{
+    grid-column: 2 / 4;
+    background-color: gold;
+}
+
+.item-3{
+    grid-row: 2 / 4;
+    background-color: black;
 }
 
 
